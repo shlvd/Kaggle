@@ -76,11 +76,6 @@ for model_name in model_names:
 	data111 = pkl.dumps(features)
 	
 	
-#    else:
-#        features.append(get_features(model_name, data_iter_224))
-#	print("Done resnet152_v1")
-#	data222 = pkl.dumps(features)
-	
 features = nd.concat(*features, dim=1)
 import pickle as pkl
 data333 = pkl.dumps(features)
